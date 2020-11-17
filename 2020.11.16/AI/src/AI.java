@@ -20,7 +20,7 @@ public class AI extends MIDlet
 class MainCanvas extends Canvas
 {
 	int x,y;
-	Image downImg,leftImg,rightImg,upImg,currentImg;
+	Image downImg,leftImg,rightImg,upImg,currentImg,leftWalk1,leftWalk2,rightWalk1,rightWalk2,upWalk1,upWalk2,downWalk1,downWalk2;
 	public MainCanvas(){
 	    try
 	    {
@@ -28,6 +28,14 @@ class MainCanvas extends Canvas
 			leftImg=Image.createImage("/sayo12.png");
 			rightImg=Image.createImage("/sayo16.png");
 			upImg=Image.createImage("/sayo14.png");
+			leftWalk1=Image.createImage("/sayo02.png");
+			leftWalk2=Image.createImage("/sayo22.png");
+			rightWalk1=Image.createImage("/sayo06.png");
+			rightWalk2=Image.createImage("/sayo26.png");
+			upWalk1=Image.createImage("/sayo04.png");
+			upWalk2=Image.createImage("/sayo24.png");
+			downWalk1=Image.createImage("/sayo00.png");
+			downWalk2=Image.createImage("/sayo20.png");
 			currentImg=downImg;
 			x=122;
 			y=122;
